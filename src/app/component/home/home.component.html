@@ -1,0 +1,10 @@
+<h1 [style.color]="h1Style ? 'gray': 'black'">Owners Directory</h1>
+
+  <ul *ngIf="owners" >
+    <li *ngFor="let owner of owners" class="content">
+      <div class="circleBase type1"> {{ owner.name.substring(0, 2).toUpperCase() }}</div>
+      <p>Name: {{ owner.name }} | Age: {{ owner.age }} | Gender: {{owner.gender}}</p>
+    </li>
+  </ul>
+
+

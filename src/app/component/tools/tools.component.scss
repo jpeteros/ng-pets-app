@@ -1,0 +1,43 @@
+.search-text{
+	margin-top:50px;
+	background-color:#7dabdb;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 1.3em;
+    padding-left: 13rem;
+    padding-right: 13rem;
+
+}
+	
+.search-text .input-search{
+	height:45px;
+	width:400px;
+	padding-left:20px;
+    color:#333;
+} 
+
+.search-text .btn-search{
+	background-color:#7dabdb;
+	border:1px solid #FFF;
+	color:#FFF;
+	padding: 11px 22px;
+}
+
+.search-text  .btn-search:hover{
+	background-color:#FFF;
+	color:#7dabdb;
+}
+
+.div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+    padding: 1.3em;
+    
+}

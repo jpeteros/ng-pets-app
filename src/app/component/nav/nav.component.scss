@@ -1,0 +1,41 @@
+header {
+  background: cornflowerblue;
+
+  .logo {
+    font-weight: bold;
+  }
+
+  nav {
+    justify-self: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0; padding: 0;
+
+      li {
+        float: left;
+
+        a {
+          background-color: cornflowerblue;
+          color: white;
+          padding: 1em 1.5em;
+          text-decoration: none;
+          text-transform: uppercase;
+        
+          &:hover {
+            color:blue;
+          }
+          
+          &:active {
+            background-color: black;
+            color: blue
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+
+ 
