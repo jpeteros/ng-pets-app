@@ -1,17 +1,34 @@
 <div class="row">
   <div class="col-sm-12">
-      <accordion [closeOthers]="true">
-          <accordion-group heading="Male">
-            <p>Content 1</p>
+      <div class="btn-group" dropdown>
+          <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle drop-select"
+                  aria-controls="dropdown-basic">
+            View Pet <span class="caret"></span>
+          </button> <i><span class="label">*Cat default selected*</span></i>
+          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+              role="menu" aria-labelledby="button-basic">
+            <li role="menuitem" (click)="triggerPetName($event, 'Cat')"><a class="dropdown-item">Cat</a></li>
+            <li role="menuitem" (click)="triggerPetName($event, 'Fish')"><a class="dropdown-item">Fish</a></li>
+            <li role="menuitem" (click)="triggerPetName($event, 'Dog')"><a class="dropdown-item">Dog</a></li>
+          </ul>
+      </div>
+      <accordion >
+          <accordion-group heading="Male" [isOpen]="isFirstOpen">
+              <ul *ngIf="malePetNameList">
+                  <li *ngFor="let malePet of malePetNameList">
+                    <p> {{ malePet }} </p>
+                  </li>
+              </ul>
+              <div *ngIf="malePetNameList.length  === 0"> Empty</div>
           </accordion-group>
-          <accordion-group heading="Female">
-            <p>Content 2</p>
+          <accordion-group heading="Female"  [isOpen]="isFirstOpen">
+              <ul *ngIf="femalePetNameList">
+                  <li *ngFor="let femalePet of femalePetNameList">
+                    <p> {{ femalePet }} </p>
+                  </li>
+              </ul>
+              <div *ngIf="femalePetNameList.length  === 0"> Empty</div>
           </accordion-group>
         </accordion>
-
-    <br>
   </div>
 </div>
-
-
-
