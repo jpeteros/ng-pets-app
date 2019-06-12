@@ -1,19 +1,20 @@
 {
-  "name": "pets-app",
+  "name": "petsapp",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "node serve.js",
-    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/cli": "~8.0.2",
     "@angular/compiler-cli": "~8.0.0",
+    "@angular-devkit/build-angular": "~0.800.0",
     "@angular/animations": "~8.0.0",
     "@angular/common": "~8.0.0",
     "@angular/compiler": "~8.0.0",
@@ -49,9 +50,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0"
   },
-
-  "engines" : {
-    "node": "~11.12.0",
-    "npm": "~6.9.0"
+  "engines": {
+    "node": "11.12.0",
+    "npm": "6.9.0"
   }
 }
