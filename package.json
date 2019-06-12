@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node serve.js",
-    "postinstall": "ng build --aot --target=production",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -49,8 +49,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0"
   },
+
   "engines" : {
-    "node": "11.12.0",
-    "npm": "6.9.0"
+    "node": "~11.12.0",
+    "npm": "~6.9.0"
   }
 }
