@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Description
 
-This application does a viewing from the JSON comes from third-party API.
+This application does a viewing from a third-party API JSON response.
 
 ## Pre-requisite
 - Install Node latest version
