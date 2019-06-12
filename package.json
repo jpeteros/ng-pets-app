@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve.js",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "ngx-bootstrap": "^3.2.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
@@ -46,5 +48,10 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
+  },
+
+  "engines" : {
+    "node": "~11.12.0",
+    "npm": "~6.9.0"
   }
 }
