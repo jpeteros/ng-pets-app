@@ -4,7 +4,7 @@ import { Owner } from '../entities/owner.entity';
 
 @Injectable()
 export class OwnerService{
-    private BASE_URL : string = "http://5c92dbfae7b1a00014078e61.mockapi.io/";
+    private BASE_URL: string = "https://5c92dbfae7b1a00014078e61.mockapi.io/";
     constructor(
         private httpClient : HttpClient
     ){}
