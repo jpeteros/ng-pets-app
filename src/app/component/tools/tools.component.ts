@@ -63,14 +63,12 @@ export class ToolsComponent implements OnInit {
       const innerName = filtered[i];
   // tslint:disable-next-line: prefer-for-of
       for (let j = 0 ; j < innerName.length; j++) {
-        if (innerName[j].type === keyInPet && gender === 'male') {
-          this.malePetNameList.push(innerName[j].name ) ;
-        }
-        this.malePetNameList.sort();
-
         switch (gender) {
           case 'male':
-           
+            if (innerName[j].type === keyInPet) {
+              this.malePetNameList.push(innerName[j].name ) ;
+            }
+            this.malePetNameList.sort();
             break;
           case 'female':
             if (innerName[j].type === keyInPet) {
